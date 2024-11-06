@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="course1Color">#FF5722</color>
+    <color name="course2Color">#3F51B5</color>
+    <color name="course3Color">#4CAF50</color>
+</resources>
