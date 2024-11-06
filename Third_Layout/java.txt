@@ -1,0 +1,31 @@
+package com.example.third_activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private TextView course1, course2, course3;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        course1 = findViewById(R.id.course1);
+        course2 = findViewById(R.id.course2);
+        course3 = findViewById(R.id.course3);
+        Button capitalizeButton = findViewById(R.id.capitalizeButton);
+
+        capitalizeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                course1.setText(course1.getText().toString().toUpperCase());
+                course2.setText(course2.getText().toString().toUpperCase());
+                course3.setText(course3.getText().toString().toUpperCase());
+            }
+        });
+    }
+}
